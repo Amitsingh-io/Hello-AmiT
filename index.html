@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <!--/Bootstrap css-->
+    <!-- own css file link-->
+    <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <!--/own css-->
+    
+    <title>Secondhand Book Reselling </title>
+  </head>
+  <body>
+    <script>
+      function fun()
+      {
+      var val=document.getElementById("email").value;
+     // var v=document.getElementsByClassName("navbar-text")
+      
+          // console.log(v);
+          alert(val);
+          
+          }
+      </script>
+    <nav class="navbar fixed-top  navbar-expand-xl navcol">
+        <a class="navbar-brand brandc" href="#">
+          <img src="logo/2.jpg" alt="">
+        </a>
+         <!--menu-->
+         
+        
+     
+      <!--menu-->
+        <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#myMenu">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        
+        <div class="collapse navbar-collapse"  id="myMenu">
+        <ul class="navbar-nav ">
+         
+            <il class="nav-item fcolw">
+             <!-- <a href="/" class="nav-link fcolw "> Home</a>-->
+              <span class="navbar-text" id="home" onclick="ho()"> Home</span>
+            </il>
+            <il class="nav-item">
+                <a href="#" class="nav-link fcolw "> About</a>
+            </il>
+            <il class="nav-item ">
+              <a href="#" class="nav-link fcolw"> Contact Us</a>
+            </il>
+            
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            
+            <il class="nav-item ">
+              <a href="#" class="nav-link fcolw"  data-toggle="modal" data-target="#loginModalCenter" > User Login</a>
+            </il>
+            <il class="nav-item ">
+              <a href="#" class="nav-link fcolw"  data-toggle="modal" data-target="#adminloginModalCenter"> Admin Login</a>
+            </il>
+            
+            
+        </ul>
+        </div>
+      
+
+      </nav>
+      
+     <!-- image -->
+     <div>
+      <img src="image/book2.jpg" class=" img-thumbnail "style="width: 100%; height: 620px;" alt="book images">
+    </div>
+      
+
+<!-- user login Modal -->
+<div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document" >
+    <div class="modal-content" style="border-color:rgb(16, 31, 233)">
+      <div class="modal-header" style="background-color: rgb(241, 212, 31);">
+        <h5 class="modal-title" id="loginModalCenterTitle">User Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" required class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" >Password</label>
+            <input type="password" required class="form-control" id="exampleInputPassword1"placeholder="Password">
+            <div style="margin-left:70%;"><a href="#" >Forgot password?</a></div>
+          </div>
+          <!--<div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>-->
+          <button type="submit" class="btn btn-primary" >Submit
+
+          </button>
+          
+           
+            <div class="row">
+                <div class="col-3">&nbsp</div>
+                  <div class="col ">
+                    New User?<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signupModalCenter"> Create an Account</a>
+                </div>
+            </div>
+          
+        </form>
+      </div>
+     <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button> 
+      </div>-->
+    </div>
+  </div>
+</div>
+
+
+<!-- user sigup Modal -->
+<div class="modal fade" id="signupModalCenter" tabindex="-1" role="dialog" aria-labelledby="signupModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="border-color:rgb(16, 31, 233)">
+      <div class="modal-header" style="background-color: rgb(241, 212, 31);">
+        <h5 class="modal-title" id="signupModalCenterTitle"> Get an Secondhand Book Seller A/c</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Admin login Modal -->
+<!-- Modal -->
+<div class="modal fade" id="adminloginModalCenter" tabindex="-1" role="dialog" aria-labelledby="adminloginModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" style="border-color:rgb(16, 31, 233)">
+      <div class="modal-header" style="background-color: rgb(241, 212, 31);">
+        <h5 class="modal-title" id="adminloginModalCenterTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+
+</div>
+          
+        
+        
+        
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  
+  
+  </body>
+</html>
